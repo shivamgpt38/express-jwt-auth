@@ -1,0 +1,17 @@
+{
+  "name": "express-jwt-app",
+  "version": "1.0.0",
+  "description": "simple express jwt boilerplate",
+  "main": "app.js",
+  "repository": "https://github.com/shivamgpt38/express-jwt-boilerplate",
+  "author": "shivam gupta",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^8.0.1",
+    "mongoose": "^4.11.12",
+    "morgan": "^1.8.2"
+  }
+}
