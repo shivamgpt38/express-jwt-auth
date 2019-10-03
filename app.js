@@ -1,20 +1,18 @@
 const express = require('express');
 const app = express();
-const bodyParser = require('body-parser');
 const config = require('./config.js');
 const morgan = require('morgan');
-//mongodb connect
+const db = require('./db/db');
 
-const mongoose = require('mongoose');
-mongoose.connect(config.db,function(err,e){
-    if(err) return console.log(err);
-    console.log('connected!!!');
-});
+//mongodb connect
+db(config.db);
+
 //morgan middleware
 app.use(morgan('tiny'));
-//body-parser middleware
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+
+//express default parser middleware
+app.use(express.urlencoded({extended: true})); 
+app.use(express.json());
 
 //exposed ports
 const port = process.env.PORT|| 9999 ;
