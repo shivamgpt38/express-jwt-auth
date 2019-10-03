@@ -18,9 +18,7 @@ Express jwt auth is a simple express authentication application using jwt
 `npm start`
 
 ### API Routes to hit
-
-
-Routes>>      
-/api/sign-up for user signup      
-/api/login to get token        
-/api/authprotectedroute to check auth
+    
+* /api/sign-up for user signup      
+* /api/login to get token        
+* /api/authprotectedroute to check auth
