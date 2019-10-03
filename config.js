@@ -1,4 +1,4 @@
 module.exports = {
-    'db':'your db address',
+    'db':'mongodb://localhost:27017/myapp',
     'secret':'l33t'
 }
