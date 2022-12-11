@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "express": "^4.15.4",
+    "express": "^4.17.3",
     "jsonwebtoken": "^8.0.1",
     "mongoose": "^4.13.19",
     "morgan": "^1.9.1"
